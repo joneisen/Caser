@@ -299,6 +299,10 @@ End
 		    t = t.ReplaceAll( "}", "%7D" )
 		    t = t.ReplaceAll( "~", "%7E" )
 		    t = t.ReplaceAll( "`", "%80" )
+		    t = t.ReplaceAll( "‘", "%91" )
+		    t = t.ReplaceAll( "‘", "%92" )
+		    t = t.ReplaceAll( "“", "%93" )
+		    t = t.ReplaceAll( "”", "%94" )
 		    Return t
 		  Case "Snake_case"
 		    Return t.ReplaceAll( " ", "_" )
